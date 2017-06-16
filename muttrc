@@ -13,6 +13,30 @@ set trash = "imaps://imap.gmail.com/[Gmail]/Trash"
 set copy = no
 set mbox = "imaps://doron.behar@imap.gmail.com/[Gmail]/All Mail"
 
+# User Interface
+set imap_check_subscribed = yes
+set sidebar_visible
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set sidebar_new_mail_only = no
+set sidebar_sort_method = path
+set mail_check_stats
+set sort = threads
+set strict_threads = yes
+
+# Preview Pane
+# number of index lines to show
+set pager_index_lines = 15
+# number of context lines to show
+set pager_context = 3
+# don't go to next message automatically
+set pager_stop = yes
+# scroll in menus
+set menu_scroll = yes
+# show tildes like in vim
+set tilde = yes
+# no ugly plus signs
+set markers = no
+
 # General Settings:
 set message_cachedir = ~/.cache/mutt/messages
 set header_cache = ~/.cache/mutt
@@ -36,6 +60,11 @@ bind pager G bottom
 bind attach,index g noop
 bind attach,index gg first-entry
 bind attach,index G last-entry
+## Mailboxes
+bind index,pager \Ci sidebar-prev
+bind index,pager \Cu sidebar-next
+bind index,pager \Co sidebar-open
+## editor
 bind editor <space> noop
 bind editor <Tab> complete-query
 ## Move messages shortcuts
