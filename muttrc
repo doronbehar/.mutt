@@ -1,6 +1,6 @@
 # Identity
 set imap_user = "doron.behar@gmail.com"
-set imap_pass=`pass gmail`
+set imap_pass = `pass gmail`
 set folder = "imaps://doron.behar@imap.gmail.com/"
 set from = "Doron Behar <doron.behar@gmail.com>"
 set realname = "Doron Behar"
@@ -26,25 +26,32 @@ set display_filter = "/usr/bin/fribidi"
 set query_command = "khard email -p %s"
 
 # Keyboard
+## Vim like bindings.
 bind pager j next-line
 bind pager k previous-line
 bind attach,index,pager \CD next-page
 bind attach,index,pager \CU previous-page
 bind pager g top
 bind pager G bottom
-bind attach,index g first-entry
+bind attach,index g noop
+bind attach,index gg first-entry
 bind attach,index G last-entry
 bind editor <space> noop
 bind editor <Tab> complete-query
-macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
-macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
+## Move messages shortcuts
+macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive message"
+macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash message"
+## Mailboxes navigation
 macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
 macro index gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
-macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
-macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
 macro index gt "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to sent mail"
+# Different from gmail's web gui's keyboard shortcuts
+macro index gp "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+# Not available in gmail's web gui's keyboard shortcuts.
+macro index gd "<change-folder>=[Gmail]/Trash<enter>" "Go to Trash"
 # macro for converting markdown to html using pandoc and webtex
-macro compose \e5 "F pandoc -s --webtex -f markdown -t html \ny^T^Utext/html; charset=utf-8\n"
+macro compose \Cf "F pandoc -s --webtex -f markdown -t html \ny^T^Utext/html; charset=utf-8\n"
 set wait_key=no
 
 # Colors
