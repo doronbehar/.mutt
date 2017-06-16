@@ -67,6 +67,9 @@ bind index,pager \Co sidebar-open
 ## editor
 bind editor <space> noop
 bind editor <Tab> complete-query
+### Fix backspace
+bind editor <backspace> backspace
+bind editor <delete> delete-char
 ## Move messages shortcuts
 macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive message"
 macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash message"
