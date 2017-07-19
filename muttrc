@@ -1,6 +1,6 @@
 # Identity
 set imap_user = "doron.behar@gmail.com"
-set imap_pass = `pass gmail`
+set imap_pass = `pass software/gmail-mutt`
 set folder = "imaps://doron.behar@imap.gmail.com/"
 set from = "Doron Behar <doron.behar@gmail.com>"
 set realname = "Doron Behar"
