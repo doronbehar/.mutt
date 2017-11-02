@@ -127,7 +127,7 @@ macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
 # Not available in gmail's web gui's keyboard shortcuts.
 macro index gd "<change-folder>=[Gmail]/Trash<enter>" "Go to Trash"
 # macro for converting markdown to html using pandoc and webtex
-macro compose \Cf "F pandoc -s --webtex -f markdown -t html \ny^T^Utext/html; charset=utf-8\n"
+macro compose \Cf "F pandoc -s --webtex -f markdown -t html \ny^T^Utext/html; charset=utf-8\n" "Convert markdown to html using pandoc and webtex"
 set wait_key=no
 # macro for opening normal w3m instance of a pure text/html inline attachment.
 macro attach w "|w3m -T text/html\n"
