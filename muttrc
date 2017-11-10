@@ -130,7 +130,9 @@ macro index gd "<change-folder>=[Gmail]/Trash<enter>" "Go to Trash"
 macro compose \Cf "F pandoc -s --webtex -f markdown -t html \ny^T^Utext/html; charset=utf-8\n" "Convert markdown to html using pandoc and webtex"
 set wait_key=no
 # macro for opening normal w3m instance of a pure text/html inline attachment.
-macro attach w "|w3m -T text/html\n"
+macro attach w "|w3m -T text/html\n" "Pipe html attachment to w3m"
+macro attach W "|w3m -T text/html -dump | $VISUAL -\n" "Pipe html attachmant's raw text to $VISUAL"
+macro attach V "|$VISUAL -\n" "Pipe any attachmant to $VISUAL"
 
 # {{{1 Colors
 color hdrdefault blue black
