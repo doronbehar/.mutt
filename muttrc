@@ -11,6 +11,7 @@ set trash = "+[Gmail]/Trash"
 set mbox = "+[Gmail]/All Mail"
 set copy = no
 source ~/.mutt/mailboxes
+source ~/.mutt/mailing-lists
 
 # {{{1 User Interface
 set sidebar_visible = yes
