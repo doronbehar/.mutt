@@ -118,6 +118,7 @@ bind editor <delete> delete-char
 ## Move messages shortcuts
 macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive message"
 macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash message"
+macro index,pager M "<save-message>=" "Move message"
 ## Mailboxes navigation
 macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
 macro index gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
