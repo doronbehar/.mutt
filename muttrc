@@ -11,7 +11,10 @@ set trash = "+[Gmail]/Trash"
 set mbox = "+[Gmail]/All Mail"
 set copy = no
 source ~/.mutt/mailboxes
+source ~/.mutt/virtual-mailboxes
 source ~/.mutt/mailing-lists
+set nm_default_uri = "notmuch:///home/doron/.local/share/mail/gmail"
+set nm_query_type = threads
 
 # {{{1 User Interface
 set sidebar_visible = yes
@@ -109,6 +112,12 @@ bind attach,index G last-entry
 bind index,pager \Ci sidebar-prev
 bind index,pager \Cu sidebar-next
 bind index,pager \Co sidebar-open
+## Virtual Mailboxes
+bind index,pager \Cv sidebar-toggle-virtual
+bind index,pager V noop
+bind index,pager VC change-vfolder
+bind index,pager VQ vfolder-from-query
+bind index,pager VT entire-thread
 ## editor
 bind editor <space> noop
 bind editor <Tab> complete-query
