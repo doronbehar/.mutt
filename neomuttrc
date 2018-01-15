@@ -1,1 +1,5 @@
-muttrc
+source colors.rc
+source common.rc
+source gpg.rc
+source keys.rc
+source virtual-mailboxes

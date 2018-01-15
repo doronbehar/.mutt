@@ -1,0 +1,17 @@
+color hdrdefault blue black
+color quoted blue black
+color signature blue black
+color attachment brightred black
+color prompt brightmagenta black
+color message brightred black
+color error brightred black
+color indicator black brightred
+color status brightgreen blue
+color tree white black
+color normal white black
+color markers brightred black
+color search white black
+color tilde brightmagenta black
+color index blue black ~F
+
+# vim:ft=muttrc
