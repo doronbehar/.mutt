@@ -37,5 +37,7 @@ set pgp_list_secring_command="gpg --no-verbose --batch --quiet --with-colons --w
 set pgp_good_sign="^\\[GNUPG:\\] GOODSIG"
 # pattern to verify a decryption occurred
 set pgp_decryption_okay="^\\[GNUPG:\\] DECRYPTION_OKAY"
+# Use the curses interface of my `pinentry-program`
+setenv PINENTRY_USER_DATA curses
 
 # vim:ft=muttrc
