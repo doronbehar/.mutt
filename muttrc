@@ -1,4 +1,5 @@
 source colors.rc
 source common.rc
 source gpg.rc
+source pgp_encrypt.mutt-commands.rc
 source keys.rc
