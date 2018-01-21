@@ -21,7 +21,7 @@ bind editor <delete> delete-char
 ## Move messages shortcuts
 macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive message"
 macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash message"
-macro index,pager M "<save-message>=" "Move message"
+bind index,pager M save-message
 ## Mailboxes navigation
 macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
 macro index gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
@@ -32,11 +32,11 @@ macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
 # Not available in gmail's web gui's keyboard shortcuts.
 macro index gd "<change-folder>=[Gmail]/Trash<enter>" "Go to Trash"
 # macro for converting markdown to html using pandoc and webtex
-macro compose \Cf "F pandoc -s --webtex -f markdown -t html \ny^T^Utext/html; charset=utf-8\n" "Convert markdown to html using pandoc and webtex"
+macro compose \Cf "<filter-entry> pandoc -s --webtex -f markdown -t html \ny<edit-type>^Utext/html; charset=utf-8\n" "Convert markdown to html using pandoc and webtex"
 set wait_key=no
 # macro for opening normal w3m instance of a pure text/html inline attachment.
-macro attach w "|w3m -T text/html\n" "Pipe html attachment to w3m"
-macro attach W "|w3m -T text/html -dump | $VISUAL -\n" "Pipe html attachmant's raw text to $VISUAL"
-macro attach V "|$VISUAL -\n" "Pipe any attachmant to $VISUAL"
+macro attach w "<pipe-message>w3m -T text/html\n" "Pipe html attachment to w3m"
+macro attach W "<pipe-message>w3m -T text/html -dump | $VISUAL -\n" "Pipe html attachmant's raw text to $VISUAL"
+macro attach V "<pipe-message>$VISUAL -\n" "Pipe any attachmant to $VISUAL"
 
 # vim:ft=muttrc
