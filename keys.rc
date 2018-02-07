@@ -11,7 +11,7 @@ bind attach,index G last-entry
 ## Mailboxes
 bind index,pager \Ci sidebar-prev
 bind index,pager \Cu sidebar-next
-macro index,pager \Co "<shell-escape>notmuch new --no-hooks<enter><sidebar-open>"
+macro index,pager \Co "<shell-escape>notmuch new --no-hooks<enter><sidebar-open>" "Open the highlighted directory on the sidebar"
 ## editor
 bind editor <space> noop
 bind editor <Tab> complete-query
