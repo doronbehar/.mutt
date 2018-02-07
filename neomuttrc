@@ -3,4 +3,5 @@ source common.rc
 source gpg.rc
 source pgp_encrypt.neomutt-commands.rc
 source keys.rc
+source aliases
 source virtual-mailboxes
