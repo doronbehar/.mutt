@@ -32,7 +32,7 @@ macro index ga "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change
 # Not available in gmail's web gui's keyboard shortcuts.
 macro index gd "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>=[Gmail]/Trash<enter>" "Go to Trash"
 # macro for converting markdown to html using pandoc and webtex
-macro compose \Cf "<filter-entry> pandoc -s --webtex -f markdown -t html \ny<edit-type>^Utext/html; charset=utf-8\n" "Convert markdown to html using pandoc and webtex"
+macro compose \Cf "<filter-entry> pandoc -s --webtex -f markdown -t html \ny<edit-type><kill-line>text/html; charset=utf-8\n" "Convert markdown to html using pandoc and webtex"
 set wait_key=no
 # macro for opening normal w3m instance of a pure text/html inline attachment.
 macro attach w "<pipe-message>w3m -T text/html\n" "Pipe html attachment to w3m"
