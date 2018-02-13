@@ -20,8 +20,8 @@ set message_cachedir = ~/.cache/mutt/messages
 set message_cachedir = ~/.cache/mutt/messages
 set header_cache = ~/.cache/mutt/header
 set tmpdir = ~/.cache/mutt/compositions
-set sendmail = "env PASSWORD_STORE_GPG_OPTS=--pinentry-mode=cancel /usr/bin/msmtp"
-set sendmail_wait=1
+set sendmail = "env PASSWORD_STORE_GPG_OPTS=--pinentry-mode=cancel msmtp-enqueue.sh"
+set sendmail_wait=0
 set send_charset = "utf-8"
 set charset = "utf-8"
 auto_view text/html
