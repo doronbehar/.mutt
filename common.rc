@@ -10,8 +10,9 @@ set postponed = "+[Gmail]/Drafts"
 set trash = "+[Gmail]/Trash"
 set mbox = "+[Gmail]/All Mail"
 set copy = no
-source ~/.mutt/mailboxes
-source ~/.mutt/mailing-lists
+source mailboxes
+source mailing-lists
+source aliases
 set nm_default_uri = "notmuch:///home/doron/.local/share/mail/gmail"
 set nm_query_type = threads
 
