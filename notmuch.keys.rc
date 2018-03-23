@@ -1,0 +1,8 @@
+bind index,pager \Cv sidebar-toggle-virtual
+bind index,pager V noop
+bind index,pager VC change-vfolder
+bind index,pager VQ vfolder-from-query
+bind index,pager VT entire-thread
+bind index,pager VL modify-labels
+
+# vim:ft=neomuttrc

@@ -3,4 +3,4 @@ source common.rc
 source gpg.rc
 source pgp_encrypt.neomutt-commands.rc
 source keys.rc
-source ~/.local/share/mutt/virtual-mailboxes
+source notmuch.rc
