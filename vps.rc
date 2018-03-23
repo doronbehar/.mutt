@@ -1,0 +1,9 @@
+set from = "Doron Behar <me@doronbehar.com>"
+set spoolfile = +vps/INBOX
+set record = "+vps/send"
+set postponed = "+vps/drafts"
+set trash = "+vps/trash"
+set mbox = "+vps/archive"
+set sendmail = "msmtp --account vps"
+
+# vim:ft=muttrc

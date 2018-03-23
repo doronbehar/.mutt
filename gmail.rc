@@ -1,0 +1,9 @@
+set from = "Doron Behar <doron.behar@gmail.com>"
+set spoolfile = +gmail/INBOX
+set record = "+gmail/[Gmail]/Sent Mail"
+set postponed = "+gmail/[Gmail]/Drafts"
+set trash = "+gmail/[Gmail]/Trash"
+set mbox = "+gmail/[Gmail]/All Mail"
+set sendmail = "env PASSWORD_STORE_GPG_OPTS=--pinentry-mode=cancel msmtp-enqueue.sh"
+
+# vim:ft=muttrc
