@@ -19,18 +19,18 @@ bind editor <Tab> complete-query
 bind editor <backspace> backspace
 bind editor <delete> delete-char
 ## Move messages shortcuts
-macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive message"
-macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash message"
+macro index,pager y "<save-message>$mbox<enter><enter>" "Archive message"
+macro index,pager d "<save-message>$trash<enter><enter>" "Trash message"
 bind index,pager M save-message
 ## Mailboxes navigation
-macro index gi "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>=INBOX<enter>" "Go to inbox"
-macro index gs "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
-macro index gt "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>=[Gmail]/Sent Mail<enter>" "Go to sent mail"
+macro index gi "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>$spoolfile<enter>" "Go to inbox"
+macro index gs "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>$my_starred<enter>" "Go to starred messages"
+macro index gt "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>$record<enter>" "Go to sent mail"
 # Different from gmail's web gui's keyboard shortcuts
-macro index gp "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
-macro index ga "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro index gp "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>$postponed<enter>" "Go to drafts"
+macro index ga "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>$mbox<enter>" "Go to all mail"
 # Not available in gmail's web gui's keyboard shortcuts.
-macro index gd "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>=[Gmail]/Trash<enter>" "Go to Trash"
+macro index gd "<shell-escape>notmuch new --no-hooks<enter><sidebar-open><change-folder>$trash<enter>" "Go to Trash"
 # macro for converting markdown to html using pandoc and webtex
 macro compose \Cf "<filter-entry> pandoc -s --webtex -f markdown -t html \ny<edit-type><kill-line>text/html; charset=utf-8\n" "Convert markdown to html using pandoc and webtex"
 set wait_key=no

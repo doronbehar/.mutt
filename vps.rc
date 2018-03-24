@@ -4,6 +4,7 @@ set record = "+vps/send"
 set postponed = "+vps/drafts"
 set trash = "+vps/trash"
 set mbox = "+vps/archive"
+set my_starred = "+vps/starred"
 set sendmail = "msmtp --account vps"
 
 # vim:ft=muttrc

@@ -4,6 +4,7 @@ set record = "+gmail/[Gmail]/Sent Mail"
 set postponed = "+gmail/[Gmail]/Drafts"
 set trash = "+gmail/[Gmail]/Trash"
 set mbox = "+gmail/[Gmail]/All Mail"
+set my_starred = "+gmail/[Gmail]/Starred"
 set sendmail = "env PASSWORD_STORE_GPG_OPTS=--pinentry-mode=cancel msmtp-enqueue.sh"
 
 # vim:ft=muttrc
