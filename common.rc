@@ -7,10 +7,10 @@ set copy = no
 # {{{1 identities
 set realname = "Doron Behar"
 source ~/.local/share/mutt/aliases
-folder-hook +gmail "source gmail.rc; source folders.keys.rc"
-folder-hook +vps "source vps.rc; source folders.keys.rc"
-source keys.rc
-source vps.rc; source folders.keys.rc
+folder-hook +gmail "source ~/.mutt/gmail.rc; source ~/.mutt/folders.keys.rc"
+folder-hook +vps "source ~/.mutt/vps.rc; source ~/.mutt/folders.keys.rc"
+source ~/.mutt/keys.rc
+source ~/.mutt/vps.rc; source ~/.mutt/folders.keys.rc
 
 # {{{1 General
 set message_cachedir = ~/.cache/mutt/messages
@@ -22,7 +22,7 @@ set send_charset = "utf-8"
 set charset = "utf-8"
 auto_view text/html
 alternative_order text/plain text/enriched text/html
-set mailcap_path = ~/.neomutt/mailcap
+set mailcap_path = ~/.mutt/mailcap
 set pager_stop = yes
 set display_filter = "/usr/bin/fribidi"
 set query_command = "khard email -p %s"
