@@ -1,6 +1,6 @@
 set from = "Doron Behar <me@doronbehar.com>"
 set spoolfile = +vps/INBOX
-set record = "+vps/send"
+set record = "+vps/Sent"
 set postponed = "+vps/drafts"
 set trash = "+vps/trash"
 set mbox = "+vps/archive"
