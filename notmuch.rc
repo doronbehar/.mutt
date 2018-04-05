@@ -2,5 +2,6 @@ source ~/.local/share/mutt/virtual-mailboxes
 source notmuch.keys.rc
 set nm_default_uri = "notmuch:///home/doron/.local/share/mail"
 set nm_query_type = threads
+push '<change-vfolder>Inbox<enter>'
 
 # vim:ft=neomuttrc
