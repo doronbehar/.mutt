@@ -4,13 +4,15 @@ source ~/.local/share/mutt/mailboxes
 source ~/.local/share/mutt/mailing-lists
 set copy = no
 
+# {{{1 sourcing
+source ~/.local/share/mutt/aliases
+source ~/.mutt/keys.rc
+
 # {{{1 identities
 set realname = "Doron Behar"
-source ~/.local/share/mutt/aliases
-folder-hook +gmail "source ~/.mutt/gmail.rc; source ~/.mutt/folders.keys.rc"
-folder-hook +vps "source ~/.mutt/vps.rc; source ~/.mutt/folders.keys.rc"
-source ~/.mutt/keys.rc
-source ~/.mutt/vps.rc; source ~/.mutt/folders.keys.rc
+folder-hook +gmail 'source ~/.mutt/gmail.rc'
+folder-hook +vps 'source ~/.mutt/vps.rc'
+source ~/.mutt/vps.rc
 
 # {{{1 General
 set message_cachedir = ~/.cache/mutt/messages
