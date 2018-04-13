@@ -12,6 +12,8 @@ source ~/.mutt/keys.rc
 set realname = "Doron Behar"
 folder-hook +gmail 'source ~/.mutt/gmail.rc'
 folder-hook +vps 'source ~/.mutt/vps.rc'
+message-hook '~C doron.behar@gmail.com | ~f doron.behar@gmail.com' 'source ~/.mutt/gmail.rc'
+message-hook '~C me@doronbehar.com | ~f me@doronbehar.com' 'source ~/.mutt/vps.rc'
 source ~/.mutt/vps.rc
 
 # {{{1 General
