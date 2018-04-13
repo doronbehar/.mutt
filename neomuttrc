@@ -1,5 +1,5 @@
-source colors.rc
-source common.rc
-source gpg.rc
-source pgp_encrypt.neomutt-commands.rc
-source notmuch.rc
+source ~/.mutt/colors.rc
+source ~/.mutt/common.rc
+source ~/.mutt/gpg.rc
+source ~/.mutt/pgp_encrypt.neomutt-commands.rc
+source ~/.mutt/notmuch.rc
