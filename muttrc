@@ -1,5 +1,5 @@
-source colors.rc
-source common.rc
-source gpg.rc
-source pgp_encrypt.mutt-commands.rc
-source keys.rc
+source ~/.mutt/colors.rc
+source ~/.mutt/common.rc
+source ~/.mutt/gpg.rc
+source ~/.mutt/pgp_encrypt.mutt-commands.rc
+source ~/.mutt/keys.rc
