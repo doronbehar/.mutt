@@ -6,6 +6,6 @@ set trash = "+gmail/[Gmail]/Trash"
 set mbox = "+gmail/[Gmail]/All Mail"
 set my_starred = "+gmail/[Gmail]/Starred"
 set sendmail = "env PASSWORD_STORE_GPG_OPTS=--pinentry-mode=cancel msmtp-enqueue.sh"
-source ~/.mutt/folders.keys.rc
+source ~/.mutt/keys/folders.rc
 
 # vim:ft=muttrc

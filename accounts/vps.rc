@@ -6,6 +6,6 @@ set trash = "+vps/trash"
 set mbox = "+vps/archive"
 set my_starred = "+vps/starred"
 set sendmail = "msmtp --account vps"
-source ~/.mutt/folders.keys.rc
+source ~/.mutt/keys/folders.rc
 
 # vim:ft=muttrc

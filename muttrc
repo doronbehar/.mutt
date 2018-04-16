@@ -1,2 +1,2 @@
 source ~/.mutt/common.rc
-source ~/.mutt/pgp_encrypt.mutt-commands.rc
+source ~/.mutt/pgp/mutt.rc
