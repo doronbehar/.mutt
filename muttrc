@@ -1,2 +1,2 @@
-source ~/.mutt/common.rc
+source ~/.mutt/common/general.rc
 source ~/.mutt/pgp/mutt.rc

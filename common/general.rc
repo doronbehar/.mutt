@@ -7,7 +7,7 @@ set copy = no
 # {{{1 sourcing
 source ~/.local/share/mutt/aliases
 source ~/.mutt/keys/general.rc
-source ~/.mutt/colors.rc
+source ~/.mutt/common/colors.rc
 source ~/.mutt/pgp/general.rc
 
 # {{{1 identities
