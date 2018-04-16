@@ -1,22 +1,9 @@
-# {{{1 Folders
-set folder = "~/.local/share/mail"
-source ~/.local/share/mutt/mailboxes
-source ~/.local/share/mutt/mailing-lists
-set copy = no
-
 # {{{1 sourcing
+source ~/.mutt/hosts/$hostname.rc
 source ~/.local/share/mutt/aliases
 source ~/.mutt/keys/general.rc
 source ~/.mutt/common/colors.rc
 source ~/.mutt/pgp/general.rc
-
-# {{{1 identities
-set realname = "Doron Behar"
-folder-hook +gmail 'source ~/.mutt/accounts/gmail.rc'
-folder-hook +vps 'source ~/.mutt/accounts/vps.rc'
-message-hook '~C doron.behar@gmail.com | ~f doron.behar@gmail.com' 'source ~/.mutt/accounts/gmail.rc'
-message-hook '~C me@doronbehar.com | ~f me@doronbehar.com' 'source ~/.mutt/accounts/vps.rc'
-source ~/.mutt/accounts/vps.rc
 
 # {{{1 General
 set message_cachedir = ~/.cache/mutt/messages
