@@ -1,6 +1,6 @@
 source ~/.local/share/mutt/virtual-mailboxes
 source ~/.mutt/keys/notmuch.rc
-set nm_default_uri = "notmuch:///home/doron/.local/share/mail"
+set nm_default_uri = "notmuch:///${HOME}/.local/share/mail"
 set nm_query_type = threads
 push '<change-vfolder>Inbox<enter>'
 
