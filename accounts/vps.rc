@@ -1,8 +1,8 @@
 set from = "Doron Behar <me@doronbehar.com>"
 set spoolfile = +vps/INBOX
 set record = "+vps/Sent"
-set postponed = "+vps/drafts"
-set trash = "+vps/trash"
+set postponed = "+vps/Drafts"
+set trash = "+vps/Trash"
 set mbox = "+vps/archive"
 set my_starred = "+vps/starred"
 set sendmail = "msmtp --account vps"
