@@ -1,5 +1,6 @@
 set folder = "~/mail"
 set from = "Doron Behar <me@doronbehar.com>"
+source ~/.mutt/accounts/general.rc
 set spoolfile = "/var/mail/doron"
 set record = "+Sent"
 set postponed = "+Drafts"

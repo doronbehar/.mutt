@@ -1,4 +1,5 @@
 set folder = "~/.local/share/mail"
+source ~/.mutt/accounts/general.rc
 folder-hook +gmail 'source ~/.mutt/accounts/gmail.rc'
 folder-hook +vps 'source ~/.mutt/accounts/vps.rc'
 message-hook '~C doron.behar@gmail.com | ~f doron.behar@gmail.com' 'source ~/.mutt/accounts/gmail.rc'

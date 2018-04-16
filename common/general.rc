@@ -1,9 +1,9 @@
 # {{{1 sourcing
-source ~/.mutt/hosts/$hostname.rc
 source ~/.local/share/mutt/aliases
 source ~/.mutt/keys/general.rc
 source ~/.mutt/common/colors.rc
 source ~/.mutt/pgp/general.rc
+source ~/.mutt/hosts/$hostname.rc
 
 # {{{1 General
 set message_cachedir = ~/.cache/mutt/messages
