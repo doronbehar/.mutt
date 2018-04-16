@@ -2,4 +2,3 @@ source ~/.mutt/colors.rc
 source ~/.mutt/common.rc
 source ~/.mutt/gpg.rc
 source ~/.mutt/pgp_encrypt.mutt-commands.rc
-source ~/.mutt/keys.rc
