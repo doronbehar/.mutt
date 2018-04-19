@@ -6,6 +6,8 @@ source ~/.mutt/pgp/general.rc
 source ~/.local/share/mutt/$hostname.rc
 
 # {{{1 General
+set save_history = 1000
+set history_file = ~/.local/share/mutt/history
 set message_cachedir = ~/.cache/mutt/messages
 set message_cachedir = ~/.cache/mutt/messages
 set header_cache = ~/.cache/mutt/header
