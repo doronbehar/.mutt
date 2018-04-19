@@ -8,6 +8,7 @@ bind pager G bottom
 bind attach,index g noop
 bind attach,index gg first-entry
 bind attach,index G last-entry
+bind pager,index N search-opposite
 ## Mailboxes
 bind index,pager \Ci sidebar-prev
 bind index,pager \Cu sidebar-next
