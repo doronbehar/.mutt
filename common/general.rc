@@ -15,6 +15,7 @@ set tmpdir = ~/.cache/mutt/compositions
 set sendmail_wait=0
 set send_charset = "utf-8"
 set charset = "utf-8"
+set rfc2047_parameters = yes
 auto_view text/html
 alternative_order text/plain text/enriched text/html
 set mailcap_path = ~/.mutt/mailcap
