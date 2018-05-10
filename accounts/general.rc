@@ -1,6 +1,5 @@
 set realname = "Doron Behar"
 source ~/.local/share/mutt/mailboxes
-source ~/.local/share/mutt/mailing-lists
 set copy = no
 
 # vim:ft=muttrc:foldmethod=marker
