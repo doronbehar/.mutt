@@ -1,9 +1,0 @@
-set folder = "~/.local/share/mail"
-source ~/.mutt/accounts/general.rc
-folder-hook +gmail 'source ~/.mutt/accounts/gmail.rc'
-folder-hook +vps 'source ~/.mutt/accounts/vps.rc'
-message-hook '~C doron.behar@gmail.com | ~f doron.behar@gmail.com' 'source ~/.mutt/accounts/gmail.rc'
-message-hook '~C me@doronbehar.com | ~f me@doronbehar.com' 'source ~/.mutt/accounts/vps.rc'
-source ~/.mutt/accounts/vps.rc
-
-# vim:ft=muttrc:foldmethod=marker
