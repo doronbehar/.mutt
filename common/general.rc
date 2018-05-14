@@ -1,5 +1,4 @@
 # {{{1 sourcing
-source ~/.local/share/mutt/aliases
 source ~/.mutt/keys/general.rc
 source ~/.mutt/common/colors.rc
 source ~/.mutt/pgp/general.rc
