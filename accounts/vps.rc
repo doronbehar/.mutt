@@ -5,7 +5,7 @@ set postponed = "+vps/Drafts"
 set trash = "+vps/Trash"
 set mbox = "+vps/archive"
 set my_starred = "+vps/starred"
-set sendmail = "msmtp --account vps"
+set sendmail = "msmtpq --account vps"
 source ~/.mutt/keys/folders.rc
 
 # vim:ft=muttrc

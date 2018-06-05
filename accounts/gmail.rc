@@ -5,7 +5,7 @@ set postponed = "+gmail/[Gmail]/Drafts"
 set trash = "+gmail/[Gmail]/Trash"
 set mbox = "+gmail/[Gmail]/All Mail"
 set my_starred = "+gmail/[Gmail]/Starred"
-set sendmail = "msmtpq"
+set sendmail = "msmtpq --account gmail"
 source ~/.mutt/keys/folders.rc
 
 # vim:ft=muttrc
