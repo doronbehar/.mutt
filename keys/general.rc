@@ -12,7 +12,7 @@ bind pager,index N search-opposite
 ## Mailboxes
 bind index,pager \Ci sidebar-prev
 bind index,pager \Cu sidebar-next
-macro index,pager \Co "<shell-escape>notmuch new --no-hooks<enter><sidebar-open>" "Open the highlighted directory on the sidebar"
+macro index,pager \Co $my_folder_hooks"<sidebar-open>" "Open the highlighted directory on the sidebar"
 ## editor
 bind editor <space> noop
 bind editor <Tab> complete-query
