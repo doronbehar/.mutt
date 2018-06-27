@@ -1,11 +1,12 @@
 set from = "Doron Behar <doron.behar@gmail.com>"
-set spoolfile = +gmail/INBOX
+set my_account_prefix = "+gmail/"
+set spoolfile = $my_account_prefix"INBOX"
 set record = ""
-set my_record = "+gmail/[Gmail]/Sent Mail"
-set postponed = "+gmail/[Gmail]/Drafts"
-set trash = "+gmail/[Gmail]/Trash"
-set mbox = "+gmail/[Gmail]/All Mail"
-set my_starred = "+gmail/[Gmail]/Starred"
+set my_record = $my_account_prefix"[Gmail]/Sent Mail"
+set postponed = $my_account_prefix"[Gmail]/Drafts"
+set trash = $my_account_prefix"[Gmail]/Trash"
+set mbox = $my_account_prefix"[Gmail]/All Mail"
+set my_starred = $my_account_prefix"[Gmail]/Starred"
 set sendmail = "msmtpq --account gmail"
 source ~/.mutt/keys/folders.rc
 
