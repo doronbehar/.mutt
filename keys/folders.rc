@@ -3,7 +3,7 @@ macro index,pager d "<save-message>$trash<enter><enter>" "Trash message"
 ## Mailboxes navigation
 macro index gi $my_folder_hooks"<sidebar-open><change-folder>$spoolfile<enter>" "Go to inbox"
 macro index gs $my_folder_hooks"<sidebar-open><change-folder>$my_starred<enter>" "Go to starred messages"
-macro index gt $my_folder_hooks"<sidebar-open><change-folder>$my_record<enter>" "Go to sent mail"
+macro index gt $my_folder_hooks"<sidebar-open><change-folder>$record<enter>" "Go to sent mail"
 # Different from gmail's web gui's keyboard shortcuts      "
 macro index gp $my_folder_hooks"<sidebar-open><change-folder>$postponed<enter>" "Go to drafts"
 macro index ga $my_folder_hooks"<sidebar-open><change-folder>$mbox<enter>" "Go to all mail"

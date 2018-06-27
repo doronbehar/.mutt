@@ -1,5 +1,5 @@
 set spoolfile = $my_account_prefix"INBOX"
-set my_record = $my_account_prefix"Sent"
+set record = $my_account_prefix"Sent"
 set postponed = $my_account_prefix"Drafts"
 set trash = $my_account_prefix"Trash"
 set mbox = $my_account_prefix"archive"
