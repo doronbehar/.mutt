@@ -1,13 +1,9 @@
-set from = "Doron Behar <me@doronbehar.com>"
-set my_account_prefix = "+vps/"
 set spoolfile = $my_account_prefix"INBOX"
-set record = ""
 set my_record = $my_account_prefix"Sent"
 set postponed = $my_account_prefix"Drafts"
 set trash = $my_account_prefix"Trash"
 set mbox = $my_account_prefix"archive"
 set my_starred = $my_account_prefix"starred"
-set sendmail = "msmtpq --account vps"
 source ~/.mutt/keys/folders.rc
 
 # vim:ft=muttrc

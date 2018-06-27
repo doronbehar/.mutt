@@ -1,0 +1,6 @@
+set realname = "Doron Behar"
+set from = "Doron Behar <me@doronbehar.com>"
+set sendmail = "msmtpq --account vps"
+
+# vim:ft=muttrc
+
