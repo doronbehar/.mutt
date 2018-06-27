@@ -1,0 +1,3 @@
+set sendmail = "msmtpq --account vps"
+
+# vim:ft=muttrc

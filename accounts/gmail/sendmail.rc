@@ -1,0 +1,4 @@
+set sendmail = "msmtpq --account gmail"
+
+# vim:ft=muttrc
+
