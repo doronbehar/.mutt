@@ -26,7 +26,6 @@ set query_command = "khard email -p %s"
 set sidebar_visible = yes
 set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
 set sidebar_new_mail_only = no
-set sidebar_sort_method = path
 set mail_check_stats
 set sort = threads
 set strict_threads = yes
