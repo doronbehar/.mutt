@@ -1,4 +1,3 @@
 source ~/.local/share/mutt/$FQDN.rc
 source ~/.mutt/common/general.rc
-source ~/.mutt/pgp/neomutt.rc
 source ~/.mutt/notmuch.rc

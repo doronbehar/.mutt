@@ -1,7 +1,7 @@
 # {{{1 sourcing
 source ~/.mutt/keys/general.rc
 source ~/.mutt/common/colors.rc
-source ~/.mutt/pgp/general.rc
+source ~/.mutt/pgp.rc
 source ~/.local/share/mutt/common/$FQDN.rc
 
 # {{{1 General
