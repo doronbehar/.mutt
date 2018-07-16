@@ -1,5 +1,6 @@
 set spoolfile = $my_account_prefix"INBOX"
 set record = $my_account_prefix"[Gmail]/Sent Mail"
+set copy = no
 set postponed = $my_account_prefix"[Gmail]/Drafts"
 set trash = $my_account_prefix"[Gmail]/Trash"
 set mbox = $my_account_prefix"[Gmail]/All Mail"
