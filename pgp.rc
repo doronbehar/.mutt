@@ -10,6 +10,7 @@ set crypt_replysign = yes
 set crypt_verify_sig = yes
 set pgp_auto_decode = yes
 set crypt_use_gpgme = yes
+set crypt_use_pka = yes
 # Use the curses interface of my `pinentry-program`
 setenv PINENTRY_USER_DATA curses
 
