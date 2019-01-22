@@ -3,8 +3,7 @@ set record = $my_account_prefix"Sent"
 set copy = yes
 set postponed = $my_account_prefix"Drafts"
 set trash = $my_account_prefix"Trash"
-set mbox = $my_account_prefix"archive"
-set my_starred = $my_account_prefix"starred"
+set mbox = $my_account_prefix"Archive"
 source ~/.mutt/keys/folders.rc
 
 # vim:ft=muttrc

@@ -4,7 +4,6 @@ set copy = no
 set postponed = $my_account_prefix"[Gmail]/Drafts"
 set trash = $my_account_prefix"[Gmail]/Trash"
 set mbox = $my_account_prefix"[Gmail]/All Mail"
-set my_starred = $my_account_prefix"[Gmail]/Starred"
 source ~/.mutt/keys/folders.rc
 
 # vim:ft=muttrc

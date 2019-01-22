@@ -2,7 +2,6 @@ macro index,pager y "<save-message>$mbox<enter><enter>" "Archive message"
 macro index,pager d "<save-message>$trash<enter><enter>" "Trash message"
 ## Mailboxes navigation
 macro index gi "<sidebar-open><change-folder>$spoolfile<enter>" "Go to inbox"
-macro index gs "<sidebar-open><change-folder>$my_starred<enter>" "Go to starred messages"
 macro index gt "<sidebar-open><change-folder>$record<enter>" "Go to sent mail"
 # Different from gmail's web gui's keyboard shortcuts      "
 macro index gp "<sidebar-open><change-folder>$postponed<enter>" "Go to drafts"
