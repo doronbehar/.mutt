@@ -1,7 +1,0 @@
-source ~/.local/share/mutt/mailboxes/virtual
-source ~/.mutt/keys/notmuch.rc
-set nm_default_uri = "notmuch:///${HOME}/.local/share/mail"
-set nm_query_type = threads
-set virtual_spoolfile = yes
-
-# vim:ft=neomuttrc

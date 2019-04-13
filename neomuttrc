@@ -1,3 +1,1 @@
-source ~/.local/share/mutt/$FQDN.rc
-source ~/.mutt/common/general.rc
-source ~/.mutt/notmuch.rc
+muttrc
