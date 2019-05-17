@@ -9,8 +9,8 @@ bind attach,index g noop
 bind attach,index gg first-entry
 bind attach,index G last-entry
 bind pager,index N search-opposite
-# macro that opens the url of a github issue update in the external browser
-macro pager,index <Esc>U '<view-attachments><view-attach><next-entry><pipe-message>xdg-open "$(grep -Eo "(http|https)://[a-zA-Z0-9./?=_-]*" | tail -1)"<enter><exit><exit>'
+# macro that opens a fzf of an email that enables selecting a url to open in external browser - uses pup https://github.com/EricChiang/pup
+macro pager,index <Esc>U '<pipe-message>pup "a[href] attr{href}" | fzf -m --query="#" | xargs xdg-open<enter><exit><exit>'
 ## Mailboxes
 bind index,pager \Ci sidebar-prev
 bind index,pager \Cu sidebar-next
