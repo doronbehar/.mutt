@@ -2,7 +2,7 @@
 source ~/.mutt/keys/general.rc
 source ~/.mutt/common/colors.rc
 source ~/.mutt/pgp.rc
-source ~/.local/share/mutt/common/$FQDN.rc
+source ~/.local/share/mutt/common/$HOST.rc
 
 # {{{1 General
 set save_history = 1000
