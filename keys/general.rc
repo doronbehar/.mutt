@@ -10,7 +10,7 @@ bind attach,index gg first-entry
 bind attach,index G last-entry
 bind pager,index N search-opposite
 # macro that opens a fzf of an email that enables selecting a url to open in external browser - uses pup https://github.com/EricChiang/pup
-macro pager,index <Esc>U '<pipe-message>pup "a[href] attr{href}" | fzf -m --query="#" | xargs xdg-open<enter><exit><exit>'
+macro pager,index <Esc>U '<pipe-message>pup "a[href] attr{href}" | fzf -m --query="#" | xargs xdg-open<enter>'
 ## Mailboxes
 bind index,pager \Ci sidebar-prev
 bind index,pager \Cu sidebar-next
