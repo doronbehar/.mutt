@@ -26,7 +26,8 @@ bind editor <delete> delete-char
 ## Move messages shortcuts
 bind index,pager M save-message
 # macro for converting markdown to html using pandoc and webtex
-macro compose \Cf "<filter-entry>pandoc --standalone --webtex --from markdown+hard_line_breaks --to html5\ny<edit-type><kill-line>text/html; charset=utf-8\n" "Convert markdown to html using pandoc and webtex"
+macro compose \Cf "<pipe-entry>pandoc --standalone --metadata=pagetitle=mail --webtex --from markdown+hard_line_breaks --to=html5 --output=/tmp/neomutt.html<enter><attach-file>/tmp/neomutt.html<enter><next-entry><toggle-disposition>" "Add pandoc generated HTML message to attached files"
+macro compose \Cu "<pipe-entry>pandoc --standalone --metadata=pagetitle=mail --webtex --from markdown+hard_line_breaks --to=html5 --output=/tmp/neomutt.html<enter>" "Update pandoc generated HTML message to attached files"
 set wait_key=no
 # macro for opening normal w3m instance of a pure text/html inline attachment.
 macro attach w "<pipe-message>w3m -T text/html\n" "Pipe html attachment to w3m"
