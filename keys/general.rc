@@ -9,10 +9,6 @@ bind attach,index g noop
 bind attach,index gg first-entry
 bind attach,index G last-entry
 bind pager,index N search-opposite
-# macro that opens a fzf of an email that enables selecting a url to open in
-# external browser - uses grep perl regex based on the one found here:
-# http://urlregex.com/
-macro pager,index,attach <Esc>U '<pipe-message>grep -Po "(ht|f)tp(s?)\://[a-zA-Z]+\.[a-zA-Z0-9\-\.]+\.[a-z]+(\:[0-9]+)*(/($|[a-zA-Z0-9\.\,\;\?\'"\'"'\\\+&%\$#\=~_\-]+))*" | fzf -m --query="#" | xargs xdg-open<enter>'
 ## Mailboxes
 bind index,pager \Ci sidebar-prev
 bind index,pager \Cu sidebar-next
