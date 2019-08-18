@@ -106,6 +106,13 @@ macro attach,compose O "\
 <save-entry><kill-line>${XDG_RUNTIME_DIR}/mutt-attachment<enter>\
 <shell-escape> ${XDG_RUNTIME_DIR}/mutt-attachment<bol>\
 " "Open with.."
+macro attach,compose X "\
+<enter-command>unset wait_key<enter>\
+<shell-escape>rm -f ${XDG_RUNTIME_DIR}/mutt-attachment<enter>\
+<save-entry><kill-line>${XDG_RUNTIME_DIR}/mutt-attachment<enter>\
+<shell-escape> ${XDG_RUNTIME_DIR}/mutt-attachment<bol>\
+xlsx2csv<eol><space>|<space>$EDITOR -c 'set ft=csv' -c CSVTabularize<enter>\
+" "Pipe xlsx2csv output to $EDITOR"
 
 # {{{1 private
 source ~/.local/share/mutt/private.rc
