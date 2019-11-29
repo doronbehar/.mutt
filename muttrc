@@ -19,6 +19,8 @@ set display_filter = "fribidi"
 set query_command = "khard email -p %s"
 set abort_noattach = yes
 set abort_noattach_regex = "\\<(attach|attached|attachments?|מצורף|מצ\"ב)\\>"
+set auto_subscribe = yes
+set sidebar_non_empty_mailbox_only = yes
 
 # {{{1 User Interface
 set sidebar_visible = yes
