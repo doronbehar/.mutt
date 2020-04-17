@@ -99,8 +99,8 @@ macro compose \Cf "<pipe-entry>pandoc --standalone --metadata=pagetitle=mail --w
 macro compose \Cu "<pipe-entry>pandoc --standalone --metadata=pagetitle=mail --webtex --from markdown+hard_line_breaks --to=html5 --output=/tmp/neomutt.html<enter>" "Update pandoc generated HTML message to attached files"
 set wait_key=no
 # macro for opening normal w3m instance of a pure text/html inline attachment.
-macro attach w "<pipe-message>w3m -T text/html\n" "Pipe html attachment to w3m"
-macro attach W "<pipe-message>w3m -T text/html -dump | $VISUAL -\n" "Pipe html attachmant's raw text to $VISUAL"
+macro attach w "<pipe-message>elinks -force-html\n" "Pipe html attachment to elinks"
+macro attach W "<pipe-message>elinks -force-html -dump -dump-color-mode 0 | $VISUAL -\n" "Pipe html attachmant's raw text to $VISUAL"
 macro attach V "<pipe-message>$VISUAL -\n" "Pipe any attachmant to $VISUAL"
 macro attach,compose O "\
 <enter-command>unset wait_key<enter>\
