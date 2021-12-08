@@ -93,6 +93,8 @@ bind editor <Tab> complete-query
 bind editor <backspace> backspace
 bind editor <delete> delete-char
 ## Move messages shortcuts
+bind index,pager D delete-message
+bind index,pager <esc>D purge-message
 bind index,pager M save-message
 # macro for converting markdown to html using pandoc and webtex
 macro compose \Cf "<pipe-entry>pandoc --standalone --metadata=pagetitle=mail --webtex --from markdown+hard_line_breaks --to=html5 --output=/tmp/neomutt.html<enter><attach-file>/tmp/neomutt.html<enter><toggle-disposition>" "Add pandoc generated HTML message to attached files"
