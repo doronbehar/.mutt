@@ -15,7 +15,7 @@ auto_view text/html
 alternative_order text/plain text/enriched text/html
 set mailcap_path = ~/.mutt/mailcap
 set pager_stop = yes
-set display_filter = "fribidi"
+set display_filter = ~/.mutt/fribidi-wrapper
 set query_command = "khard email -p %s"
 set abort_noattach = yes
 set abort_noattach_regex = "\\<(attach|attached|attachments?|מצורף|מצ\"ב)\\>"
