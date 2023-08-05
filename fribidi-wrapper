@@ -1,6 +1,7 @@
 #!/bin/sh
 
-if [[ -z "$MLTERM" ]]; then
+# Every terminal compiled with vte support does bidi on it's own.
+if [[ -z "$MLTERM" ]] && [[ -z "$VTE_VERSION" ]]; then
 	fribidi "$@"
 else
 	cat "$@"
