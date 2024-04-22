@@ -3,7 +3,6 @@ set save_history = 1000
 set folder = "~/.local/share/mail"
 set history_file = ~/.local/share/mutt/history
 set message_cachedir = ~/.cache/mutt/messages
-set message_cachedir = ~/.cache/mutt/messages
 set header_cache = ~/.cache/mutt/header
 set tmpdir = ~/.cache/mutt/compositions
 set mbox_type = Maildir
