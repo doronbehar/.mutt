@@ -102,6 +102,7 @@ macro compose \Cu "<pipe-entry>pandoc --standalone --metadata=pagetitle=mail --w
 set wait_key=no
 # macro for opening normal w3m instance of a pure text/html inline attachment.
 macro index,pager U "<enter-command>set pipe_decode = yes<enter><pipe-message>urlscan<enter><enter-command>set pipe_decode = no<enter>" "view URLs"
+ifndef $TMUX 'macro index,pager <esc>- "<enter-command>set pipe_decode = yes<enter><pipe-message>urlscan<enter><enter-command>set pipe_decode = no<enter>" "view URLs"'
 macro attach w "<pipe-message>w3m -T text/html\n" "Pipe html attachment to w3m"
 macro attach W "<pipe-message>w3m -T text/html -dump | $VISUAL -\n" "Pipe html attachmant's raw text to $VISUAL"
 macro attach V "<pipe-message>$VISUAL -\n" "Pipe any attachmant to $VISUAL"
