@@ -123,5 +123,7 @@ xlsx2csv<eol><space>|<space>$EDITOR -c 'set ft=csv' -c CSVTabularize<enter>\
 
 # {{{1 private
 source ~/.local/share/mutt/private.rc
+folder-hook $trash 'set read_inc=10'
+folder-hook $mbox 'set read_inc=10'
 
 # vim:ft=muttrc:foldmethod=marker
