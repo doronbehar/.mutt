@@ -97,7 +97,7 @@ bind pager,index R group-chat-reply
 bind index,pager <esc>D purge-message
 bind index,pager M save-message
 # macro for converting markdown to html using pandoc and webtex
-macro compose \Cf "<pipe-entry>pandoc --standalone --metadata=pagetitle=mail --webtex --from markdown+hard_line_breaks-blank_before_blockquote --to=html5 --output=/tmp/neomutt.html<enter><attach-file>/tmp/neomutt.html<enter><toggle-disposition>" "Add pandoc generated HTML message to attached files"
+macro compose \Cf "<tag-entry><pipe-entry>pandoc --standalone --metadata=pagetitle=mail --webtex --from markdown+hard_line_breaks-blank_before_blockquote --to=html5 --output=/tmp/neomutt.html<enter><attach-file>/tmp/neomutt.html<enter><tag-entry><toggle-disposition><group-alternatives>" "Add pandoc generated HTML message to attached files"
 macro compose \Cu "<pipe-entry>pandoc --standalone --metadata=pagetitle=mail --webtex --from markdown+hard_line_breaks-blank_before_blockquote --to=html5 --output=/tmp/neomutt.html<enter>" "Update pandoc generated HTML message to attached files"
 set wait_key=no
 # macro for opening normal w3m instance of a pure text/html inline attachment.
